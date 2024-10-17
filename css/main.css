@@ -696,135 +696,12 @@ h2 {
     max-width: 90px;
   }
 }
-.hero-top {
-  background: var(--gradiente-azul);
-  padding: 20px 0px;
-  max-height: 170px;
-  overflow: hidden;
-}
-.hero-top .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.hero-top-mid {
-  display: flex;
-}
-.hero-top-mid p {
-  color: #f7f7ff;
-  text-align: center;
-  font-family: "General Sans", sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%; /* 42px */
-  text-transform: capitalize;
-}
-
-.underlined-hero {
-  position: relative;
-}
-.underlined-hero svg {
-  position: absolute;
-  bottom: -5px;
-  left: 0px;
-  right: 0px;
-  max-width: 100%;
-  width: 100%;
-}
-
-.hero-mid-left {
-  display: flex;
-  white-space: nowrap;
-}
-
-.hero-mid-right {
-  display: flex;
-  white-space: nowrap;
-}
-
-@media screen and (max-width: 1140px) {
-  .hero-top-mid p {
-    font-size: 34px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .hero-top-mid p {
-    font-size: 24px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .hero-top {
-    padding: 10px 0px 10px 0px;
-    max-height: 92px;
-  }
-  .hero-top .checkmark {
-    max-width: 30px;
-    max-height: 30px;
-  }
-  .hero-top-mid {
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero-top-mid p {
-    font-size: 20px;
-  }
-  .hero-top .wrapper {
-    padding: 0px 20px;
-    gap: 10px;
-  }
-  .hero-top-mid p {
-    line-height: 113%;
-  }
-}
-@media screen and (max-width: 425px) {
-  .hero-top .wrapper {
-    padding: 0px 5px;
-  }
-  .hero-top .wrapper > svg {
-    max-width: 40px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .hero-top-mid p {
-    font-size: 16px;
-  }
-}
 .hero {
   min-height: 625px;
   padding: 58px 0px;
-  background-color: #041b2f;
+  background-color: #b7dfff;
   position: relative;
   overflow: hidden;
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background-image: linear-gradient(90deg, #041b2f 50%, rgba(4, 27, 47, 0) 400%);
-}
-
-.hero-background-img {
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  height: 100%;
-  max-width: 60%;
-  width: 100%;
-}
-.hero-background-img img {
-  height: 100%;
-  max-width: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: right;
-     object-position: right;
 }
 
 .content {
@@ -839,7 +716,7 @@ h2 {
   margin-left: auto;
 }
 .hero-left h1 {
-  color: #f7f7ff;
+  color: #091a3f;
   display: inline-block;
   max-width: 670px;
   padding-top: 10px;
