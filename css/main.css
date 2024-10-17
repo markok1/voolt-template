@@ -1036,7 +1036,6 @@ h2 {
   }
 }
 .start-ad {
-  background: #f4f5fb;
   padding: 80px 0px;
   font-family: "Inter Tight", sans-serif;
 }
@@ -1045,18 +1044,22 @@ h2 {
 }
 .start-ad .subtitle {
   color: #202122;
-  font-size: 40px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 36px; /* 90% */
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.18px;
   margin-bottom: 40px;
 }
 .start-ad h2 {
-  margin-bottom: 10px;
-  font-size: 52px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 70px;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: 0.48px;
+  max-width: 891px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 .start-ad .btnplace {
   align-items: center;
@@ -1070,7 +1073,7 @@ h2 {
 
 .ads-block {
   border-radius: 20px;
-  background: #041b2f;
+  background: #091a3f;
   max-width: 100%;
   display: flex;
   align-items: center;
