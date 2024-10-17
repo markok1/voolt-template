@@ -1,0 +1,52 @@
+.navbar {
+  padding: 13px 0px;
+  background: #091a3f;
+  .logo {
+    img {
+      max-width: 146px;
+    }
+  }
+}
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .navbar {
+    .primary-button {
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .navbar {
+    .primary-button {
+      font-size: 14px;
+      min-height: 40px;
+      max-width: 250px;
+      width: 100%;
+      border-radius: 4px;
+    }
+    .primary-button--with-unset {
+      padding-left: 25px;
+      padding-right: 25px;
+      width: unset;
+    }
+  }
+  .nav-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .navbar {
+    padding: 11px 0px;
+    .logo {
+      img {
+        max-width: 90px;
+      }
+    }
+  }
+}

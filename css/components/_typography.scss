@@ -1,0 +1,81 @@
+h1 {
+  font-family: $genralsans;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+h2 {
+  font-family: $genralsans;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+}
+.text-xl {
+  font-family: $genralsans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+.text-l--bold {
+  font-family: $genralsans;
+  color: #202122;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 21.6px */
+}
+.text-l {
+  font-family: $genralsans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.text-m--semibold {
+  font-family: $genralsans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
+}
+.text-m {
+  font-family: $genralsans;
+  color: #202122;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 120%; /* 30px */
+  }
+  h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 33.6px */
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.color-white {
+  color: #fff;
+}
+.color-gray {
+  color: #d9d9d9;
+}
+.color-blue {
+  color: #0594fa;
+}
+.align-center {
+  text-align: center;
+}

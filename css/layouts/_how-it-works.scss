@@ -1,0 +1,327 @@
+.how-it-works {
+  padding: 80px 0px;
+  .wrapper {
+    max-width: 1146px;
+  }
+  h2 {
+    color: #202122;
+    text-align: center;
+    font-family: $genralsans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .subtitle {
+    color: #202122;
+    text-align: center;
+    font-family: $genralsans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+  }
+  .slick-arrow {
+    background: transparent;
+    border: 0px;
+    position: absolute;
+    top: calc(50% + 20px);
+    transform: translateY(-50%);
+  }
+  .pull-left {
+    left: 0px;
+    z-index: 2;
+  }
+  .pull-right {
+    right: 0px;
+    z-index: 2;
+  }
+  .how-marketing-holder {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 40px;
+  }
+  .slick-dots {
+    display: flex;
+    max-width: fit-content;
+    margin: auto;
+    gap: 78px;
+    position: relative;
+    margin-bottom: 40px;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background: #202122;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -62px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background: #202122;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -62px;
+    }
+
+    li {
+      position: relative;
+
+      button {
+        background: #8a8a8a;
+        z-index: 2;
+        width: 62px;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 0px;
+
+        color: #000;
+        font-family: Helvetica;
+        font-size: 32.32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40.4px;
+        transition: all 0.25s ease-in;
+      }
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      width: 78px;
+      height: 2px;
+      background: #202122;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -78px;
+      z-index: -1;
+    }
+    li:first-child::before {
+      width: 62px;
+      left: -62px;
+    }
+    li::after {
+      content: "";
+      position: absolute;
+      width: 78px;
+      height: 2px;
+      background: #202122;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -78px;
+      z-index: -1;
+    }
+    li:last-child::after {
+      width: 62px;
+      right: -62px;
+    }
+    .slick-active {
+      button {
+        background: #ffd20a;
+        transition: all 0.25s ease-in;
+      }
+    }
+  }
+
+  .slide-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+  }
+  .text-box {
+    max-width: 293px;
+    p {
+      padding-top: 27px;
+      color: #202122;
+      font-family: Helvetica;
+      font-size: 28.28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32.32px;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .number {
+    width: 62px;
+    height: 62px;
+    background: #ffd20a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius: 50%;
+
+    font-family: Helvetica, sans-serif;
+    font-size: 32.32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40.4px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .how-it-works {
+    h2 {
+      font-size: 48px;
+    }
+    .subtitle {
+      font-size: 30px;
+    }
+  }
+  .how-it-works .slick-dots {
+    gap: 38px;
+  }
+  .how-it-works .slick-dots li::before {
+    width: 38px;
+    left: -38px;
+  }
+  .how-it-works .slick-dots li::after {
+    width: 38px;
+    right: -38px;
+  }
+  .how-it-works .slick-dots li:first-child::before {
+    width: 38px;
+    left: -38px;
+  }
+  .how-it-works .slick-dots li:last-child::after {
+    width: 38px;
+    right: -38px;
+  }
+  .how-it-works .slick-dots::before {
+    left: -38px;
+  }
+  .how-it-works .slick-dots::after {
+    right: -38px;
+  }
+  .how-it-works .slide-box {
+    gap: 20px;
+    padding: 0px 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .how-it-works {
+    padding: 40px 0px;
+    h2 {
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 24px;
+      margin-top: 8px;
+    }
+    .primary-button {
+      font-size: 18px !important;
+      max-width: 340px;
+      min-height: 56px;
+      border-radius: 7px;
+    }
+  }
+  .how-it-works {
+    .how-marketing-holder {
+      margin-top: 20px;
+    }
+    .slick-dots {
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .slick-dots li button {
+      width: 28px;
+      height: 28px;
+
+      color: #000;
+      font-size: 14.545px;
+      line-height: 18.181px;
+    }
+    .slide-box {
+      flex-direction: column;
+      gap: 16px;
+      padding: 0px 40px;
+    }
+    .number {
+      width: 38px;
+      height: 38px;
+
+      font-size: 19.655px;
+      line-height: 24.569px;
+      flex-shrink: 0;
+    }
+    .text-box {
+      display: flex;
+      gap: 16px;
+      max-width: 260px;
+      p {
+        padding-top: 0px;
+        font-size: 17.198px;
+        line-height: 19.655px;
+      }
+    }
+    .slick-arrow {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .how-it-works .slick-dots li:first-child::before {
+    width: 18px;
+    left: -18px;
+  }
+  .how-it-works .slick-dots li:last-child::after {
+    width: 18px;
+    right: -18px;
+  }
+  .how-it-works .slick-dots::before {
+    left: -18px;
+    width: 5px;
+    height: 5px;
+  }
+  .how-it-works .slick-dots::after {
+    right: -18px;
+    width: 5px;
+    height: 5px;
+  }
+
+  // .how-it-works .pull-left {
+  //   left: -15px;
+  // }
+  // .how-it-works .pull-right {
+  //   right: -15px;
+  // }
+}
+@media screen and (max-width: 375px) {
+  .how-it-works h2 {
+    font-size: 31px;
+  }
+  .how-it-works .subtitle {
+    font-size: 22px;
+  }
+  .how-it-works .number {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+  .how-it-works .text-box p {
+    padding-top: 0px;
+    font-size: 14.198px;
+    line-height: 16.655px;
+  }
+  .how-it-works .text-box {
+    gap: 8px;
+  }
+}
