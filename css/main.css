@@ -1,35 +1,4 @@
-@font-face {
-  font-family: "General Sans";
-  src: url("../fonts/GeneralSans-Regular.otf");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "General Sans";
-  src: url("../fonts/GeneralSans-Medium.otf");
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "General Sans";
-  src: url("../fonts/GeneralSans-Semibold.otf");
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "General Sans";
-  src: url("../fonts/GeneralSans-Bold.otf");
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --color-blue: #0594fa;
   --color-dark-blue: #3454da;
@@ -2738,4 +2707,14 @@ footer .footer-text {
   footer .wrapper {
     gap: 20px;
   }
+}
+.one-line-testimonials p {
+  color: #09090b;
+  text-align: center;
+  font-family: "Inter Tight";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: -0.09px;
 }/*# sourceMappingURL=main.css.map */
