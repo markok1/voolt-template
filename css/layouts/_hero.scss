@@ -17,12 +17,11 @@
   position: relative;
   z-index: 2;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .hero-left {
   max-width: calc(50% - 5px);
-  margin-left: auto;
   h1 {
     color: #091a3f;
     display: inline-block;
@@ -33,13 +32,13 @@
     font-weight: 800;
     line-height: 82px; /* 113.889% */
     letter-spacing: -1.44px;
-    div {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+    // div {
+    //   display: flex;
+    //   align-items: center;
+    //   gap: 10px;
+    // }
   }
-  span {
+  span:first-child {
     display: inline-flex;
     width: 100%;
     max-width: fit-content;
@@ -63,14 +62,14 @@
     }
   }
   .subtitle {
-    color: #f7f7ff;
+    color: #27272a;
     font-family: $genralsans;
-    font-size: 36px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 700;
+    line-height: 130%;
     padding-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 }
 .btnplace {
@@ -79,60 +78,74 @@
   gap: 16px;
   align-items: flex-start;
   p {
-    color: #fff;
+    color: #71717a;
     font-family: $genralsans;
-    font-size: 23px;
+    font-size: 16px;
     font-style: italic;
     font-weight: 400;
     line-height: normal;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 10px;
   }
 }
 
 .buttons {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  gap: 2px;
+
+  gap: 12px;
   p {
     text-align: center;
   }
   .primary-button {
-    max-width: 417px;
-    width: 100%;
-    padding: 0px 40px;
+    white-space: nowrap;
   }
 }
 .hero-right {
   max-width: calc(50% - 66px);
-  margin-left: auto;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
   picture {
     img {
-      max-width: 590px;
+      max-width: 500px;
+      width: 100%;
     }
   }
 }
 @media screen and (max-width: 1250px) {
   .hero-left h1 {
-    font-size: 45px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .hero-left span img {
+    max-width: 200px !important;
   }
 }
 @media screen and (max-width: 1024px) {
   .hero {
     min-height: unset;
   }
+
   .hero-left h1 {
     font-size: 33.387px;
+    line-height: 43px;
     span {
       font-size: 33px;
     }
   }
+  .hero-left span img {
+    max-width: 100px !important;
+  }
   .hero-left .subtitle {
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: -0.09px;
   }
   .hero-left {
     span:first-child {
@@ -151,6 +164,22 @@
       border-radius: 7px;
     }
   }
+  .hero-right {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    transform: unset;
+    picture {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
   .btnplace p {
     font-size: 16px;
   }
@@ -161,35 +190,71 @@
     padding: 40px 0px;
     .primary-button {
       font-size: 18px !important;
-      max-width: 340px;
-      min-height: 56px;
-      border-radius: 7px;
-      padding: 0px;
     }
+  }
+  .hero-left h1 {
+    font-size: 32px;
+    line-height: 42px;
   }
   .content {
     flex-direction: column;
     .btnplace {
       align-items: center;
-      gap: 8px;
+      gap: 12px;
     }
   }
   .hero-left {
+    order: 1;
     max-width: 100%;
     margin-left: unset;
     margin-bottom: 30px;
     .subtitle {
-      margin-bottom: 15px;
+      margin-bottom: 0px;
     }
   }
+  .btnplace {
+    order: 3;
+  }
   .hero-right {
+    position: relative;
+    order: 2;
     max-width: unset;
-    width: 280px;
+    width: 330px;
     margin-left: unset;
+    margin: auto;
     picture {
       img {
         // max-width: 290px;
-        width: 280px;
+        width: 330px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 530px) {
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+  }
+  .hero-left {
+    margin-bottom: 20px;
+  }
+  .hero-right {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 32px 0px;
+    h1 {
+      padding-top: 0px;
+    }
+  }
+  .hero-right {
+    width: 285px;
+    picture {
+      img {
+        width: 285px;
       }
     }
   }
@@ -198,10 +263,7 @@
   .hero-left .primary-button {
     font-size: 17px;
   }
-  .hero-left h1 {
-    font-size: 25px;
-  }
   .hero-left span img {
-    max-width: 100px !important;
+    max-width: 113px !important;
   }
 }

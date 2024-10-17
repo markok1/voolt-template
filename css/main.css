@@ -2,7 +2,7 @@
 :root {
   --color-blue: #0594fa;
   --color-dark-blue: #3454da;
-  --color-yellow: #ffd20a;
+  --color-yellow: #fcc82c;
   --color-light-black: #242424;
   --color-black: #202122;
   --color-white: #fff;
@@ -213,19 +213,22 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 340px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   width: 100%;
-  gap: 10px;
-  border-radius: 10px;
-  background: var(--color-yellow, #ffd20a);
+  padding: var(--Spacing-4, 16px) var(--Spacing-8, 32px);
+  gap: var(--spacing-nano, 8px);
+  border-radius: 6px;
+  background: var(--color-yellow, #fcc82c);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.25s ease-in;
-  color: #112c8d;
+  color: #27272a;
   font-family: "Inter Tight", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.16px;
 }
 .primary-button:hover {
   background: color-mix(in srgb, var(--color-yellow), #000 50%);
@@ -247,7 +250,7 @@ h2 {
   color: #09090b;
   border: 1px solid var(--Border---border, #e4e4e7);
   background: var(--Background---secondary, #fff);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 .primary-button--white:hover {
   opacity: 0.8;
@@ -677,12 +680,11 @@ h2 {
   position: relative;
   z-index: 2;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .hero-left {
   max-width: calc(50% - 5px);
-  margin-left: auto;
 }
 .hero-left h1 {
   color: #091a3f;
@@ -695,12 +697,7 @@ h2 {
   line-height: 82px; /* 113.889% */
   letter-spacing: -1.44px;
 }
-.hero-left h1 div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.hero-left span {
+.hero-left span:first-child {
   display: inline-flex;
   width: 100%;
   max-width: -moz-fit-content;
@@ -708,7 +705,7 @@ h2 {
   align-items: center;
   vertical-align: bottom;
 }
-.hero-left span img {
+.hero-left span:first-child img {
   flex-shrink: 0;
 }
 .hero-left .google-ads-span {
@@ -725,14 +722,14 @@ h2 {
   max-width: 70px;
 }
 .hero-left .subtitle {
-  color: #f7f7ff;
+  color: #27272a;
   font-family: "Inter Tight", sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 700;
+  line-height: 130%;
   padding-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .btnplace {
@@ -742,43 +739,49 @@ h2 {
   align-items: flex-start;
 }
 .btnplace p {
-  color: #fff;
+  color: #71717a;
   font-family: "Inter Tight", sans-serif;
-  font-size: 23px;
+  font-size: 16px;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 10px;
 }
 
 .buttons {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  gap: 2px;
+  gap: 12px;
 }
 .buttons p {
   text-align: center;
 }
 .buttons .primary-button {
-  max-width: 417px;
-  width: 100%;
-  padding: 0px 40px;
+  white-space: nowrap;
 }
 
 .hero-right {
   max-width: calc(50% - 66px);
-  margin-left: auto;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
 }
 .hero-right picture img {
-  max-width: 590px;
+  max-width: 500px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1250px) {
   .hero-left h1 {
-    font-size: 45px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .hero-left span img {
+    max-width: 200px !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -787,14 +790,20 @@ h2 {
   }
   .hero-left h1 {
     font-size: 33.387px;
+    line-height: 43px;
   }
   .hero-left h1 span {
     font-size: 33px;
   }
+  .hero-left span img {
+    max-width: 100px !important;
+  }
   .hero-left .subtitle {
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: -0.09px;
   }
   .hero-left span:first-child img {
     max-width: 130px;
@@ -806,6 +815,24 @@ h2 {
     font-size: 19px;
     border-radius: 7px;
   }
+  .hero-right {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    transform: unset;
+  }
+  .hero-right picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero-right picture img {
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .btnplace p {
     font-size: 16px;
   }
@@ -816,44 +843,75 @@ h2 {
   }
   .hero .primary-button {
     font-size: 18px !important;
-    max-width: 340px;
-    min-height: 56px;
-    border-radius: 7px;
-    padding: 0px;
+  }
+  .hero-left h1 {
+    font-size: 32px;
+    line-height: 42px;
   }
   .content {
     flex-direction: column;
   }
   .content .btnplace {
     align-items: center;
-    gap: 8px;
+    gap: 12px;
   }
   .hero-left {
+    order: 1;
     max-width: 100%;
     margin-left: unset;
     margin-bottom: 30px;
   }
   .hero-left .subtitle {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+  }
+  .btnplace {
+    order: 3;
   }
   .hero-right {
+    position: relative;
+    order: 2;
     max-width: unset;
-    width: 280px;
+    width: 330px;
     margin-left: unset;
+    margin: auto;
   }
   .hero-right picture img {
-    width: 280px;
+    width: 330px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+  }
+  .hero-left {
+    margin-bottom: 20px;
+  }
+  .hero-right {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 32px 0px;
+  }
+  .hero h1 {
+    padding-top: 0px;
+  }
+  .hero-right {
+    width: 285px;
+  }
+  .hero-right picture img {
+    width: 285px;
   }
 }
 @media screen and (max-width: 375px) {
   .hero-left .primary-button {
     font-size: 17px;
   }
-  .hero-left h1 {
-    font-size: 25px;
-  }
   .hero-left span img {
-    max-width: 100px !important;
+    max-width: 113px !important;
   }
 }
 .under-hero {
@@ -1408,6 +1466,7 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 120px;
+  flex-direction: row-reverse;
 }
 .how-it-works .text-box {
   max-width: 293px;

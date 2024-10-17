@@ -4,23 +4,25 @@
   justify-content: center;
   align-items: center;
 
-  max-width: 340px;
+  max-width: fit-content;
   width: 100%;
 
-  gap: 10px;
+  padding: var(--Spacing-4, 16px) var(--Spacing-8, 32px);
+  gap: var(--spacing-nano, 8px);
 
-  border-radius: 10px;
-  background: var(--color-yellow, #ffd20a);
+  border-radius: 6px;
+  background: var(--color-yellow, #fcc82c);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.25s ease-in;
 
-  color: #112c8d;
+  color: #27272a;
 
   font-family: $genralsans;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.16px;
   &:hover {
     background: color-mix(in srgb, var(--color-yellow), #000 50%);
     color: #fff;
@@ -40,7 +42,7 @@
   color: #09090b;
   border: 1px solid var(--Border---border, #e4e4e7);
   background: var(--Background---secondary, #fff);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px 0px rgba(0, 0, 0, 0);
   &:hover {
     opacity: 0.8;
     background: #fff;
