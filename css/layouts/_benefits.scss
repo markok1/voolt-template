@@ -1,0 +1,70 @@
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .box {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1282px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    gap: 40px;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 100%; // Default for smaller screens
+
+    @media (min-width: 768px) {
+      // lg breakpoint
+      max-width: calc(50% - 50px);
+    }
+  }
+  .item {
+    display: flex;
+    gap: 12px;
+    svg {
+      min-width: 32px;
+    }
+  }
+  .cont {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  h3 {
+    font-family: "Inter Tight";
+    color: #09090b;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%; /* 29.7px */
+    letter-spacing: -0.11px;
+  }
+  p {
+    color: #71717a;
+    font-family: "Inter Tight";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: 0.18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .benefits .left {
+    max-width: 100%;
+  }
+  .down-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
