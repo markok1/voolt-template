@@ -1,0 +1,190 @@
+.campaigns {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  h2 {
+    color: #202122;
+    text-align: center;
+
+    /* Title/Heading H1 */
+    font-family: "Inter Tight";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: 0.48px;
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+.campaign {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1112px;
+  margin: auto;
+  margin-top: 40px;
+  align-items: center;
+  gap: 20px;
+  .left {
+    max-width: 560px;
+    width: 100%;
+  }
+  .right {
+    max-width: 379px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    h3 {
+      color: #000;
+      font-family: "Inter Tight";
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 135%; /* 29.7px */
+      letter-spacing: -0.11px;
+    }
+    p {
+      color: #000;
+
+      /* Base XL/Regular */
+      font-family: "Inter Tight";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 25.2px */
+      letter-spacing: 0.18px;
+    }
+  }
+  .box {
+    padding: 50px 55px;
+    border-radius: 20px;
+    background: #b7dfff;
+    display: flex;
+    flex-direction: column;
+
+    .cont {
+      padding: 5px 12px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        color: #000;
+        font-family: "Inter Tight";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.16px;
+      }
+
+      h3 {
+        color: #000;
+        font-family: "Inter Tight";
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 135%; /* 29.7px */
+        letter-spacing: -0.11px;
+      }
+    }
+
+    .inside {
+      border-radius: 10px;
+      background: #fff;
+      width: 100%;
+      max-width: 450px;
+      display: flex;
+      align-items: stretch;
+      flex-grow: 1; /* Ensures .inside grows to fill .box */
+      height: 100%; /* Take full height */
+    }
+
+    .img-place {
+      width: 100px;
+      max-width: 100px;
+      min-width: 100px;
+      flex: 1; /* Grow to fill height of .inside */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px 0px 0px 10px;
+      background: #058beb;
+      min-height: 100px;
+    }
+  }
+}
+
+.campaign.campaign-v2 {
+  margin-top: 160px;
+  .box .img-place {
+    background: #fcc82c;
+  }
+}
+.campaign.campaign-v3 {
+  margin-top: 160px;
+  .box .img-place {
+    background: #091a3f;
+  }
+}
+
+@media (max-width: 991px) {
+  .campaign {
+    gap: 10px;
+  }
+  .campaign .left {
+    width: calc(50% + 20px);
+  }
+  .campaign .right {
+    width: calc(50% - 30px);
+  }
+  .campaign.campaign-v2,
+  .campaign.campaign-v3 {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 772px) {
+  .campaigns {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .campaigns h2 {
+    font-size: 24px;
+    line-height: 130%; /* 31.2px */
+  }
+  .campaign .box {
+    padding: 18px 40px;
+  }
+  .campaign .box .cont h4 {
+    font-size: 12px;
+    line-height: 150%; /* 13.5px */
+    letter-spacing: 0.09px;
+  }
+  .campaign .box .cont h3 {
+    font-size: 16px;
+    letter-spacing: 0.14px;
+  }
+  .campaign .right h3 {
+    font-size: 18px;
+  }
+  .campaign .right p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .campaign {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .campaign .left,
+  .campaign .right {
+    width: 100%;
+  }
+  .campaign .box .img-place {
+    width: 57px;
+    min-width: 57px;
+    svg {
+      width: 22px;
+    }
+  }
+}

@@ -1,4 +1,6 @@
 .one-line-testimonials {
+  padding-top: 60px;
+  padding-bottom: 60px;
   p {
     color: #09090b;
     text-align: center;
@@ -8,5 +10,69 @@
     font-weight: 600;
     line-height: 28px; /* 155.556% */
     letter-spacing: -0.09px;
+
+    max-width: 800px;
+    margin: auto;
+  }
+  .avatar-place {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 39px;
+    .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 100%;
+    }
+    h3 {
+      color: #09090b;
+      font-family: "Inter Tight";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%; /* 25.2px */
+      letter-spacing: 0.18px;
+    }
+    p {
+      color: #71717a;
+      font-family: "Inter Tight";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%; /* 25.2px */
+      letter-spacing: 0.18px;
+      margin-top: 7px;
+    }
+  }
+}
+
+@media (max-width: 772px) {
+  .one-line-testimonials {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .one-line-testimonials p {
+    font-size: 14px;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.07px;
+  }
+  .one-line-testimonials .avatar-place {
+    margin-top: 32px;
+  }
+  .one-line-testimonials .avatar-place .avatar {
+    width: 48px;
+    height: 48px;
+  }
+  .one-line-testimonials .avatar-place h3 {
+    line-height: 140%; /* 18.9px */
+    letter-spacing: 0.135px;
+    font-size: 13.5px;
+  }
+  .one-line-testimonials .avatar-place p {
+    margin-top: 6px;
+    line-height: 140%; /* 18.9px */
+    letter-spacing: 0.135px;
+    font-size: 13.5px;
   }
 }
