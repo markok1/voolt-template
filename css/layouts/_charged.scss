@@ -1,10 +1,20 @@
 .charged {
   padding: 80px 0px;
-  background: var(--dark-blue-gradiente, linear-gradient(180deg, #041b2f 0%, #003360 100%));
+  background: var(
+    --dark-blue-gradiente,
+    linear-gradient(180deg, #041b2f 0%, #003360 100%)
+  );
   h2 {
-    line-height: normal;
-    color: #f7f7ff;
+    color: var(--Background---background, #fff);
     text-align: center;
+
+    /* Title/Heading H1 */
+    font-family: "Inter Tight";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: 0.48px;
     margin-bottom: 40px;
   }
 }

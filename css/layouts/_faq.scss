@@ -13,7 +13,12 @@
     text-align: center;
     margin: 0 0 48px;
     color: #202122;
-    line-height: 120%;
+    font-family: "Inter Tight";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: 0.48px;
   }
 
   .questions {
@@ -57,11 +62,13 @@
         gap: 16px;
         margin: 0;
         position: relative;
-        font-family: $genralsans;
-        font-size: 24px;
+        color: #202122;
+        font-family: "Inter Tight";
+        font-size: 18px;
         font-style: normal;
-        font-weight: 500;
-        line-height: 130%;
+        font-weight: 400;
+        line-height: 140%; /* 25.2px */
+        letter-spacing: 0.18px;
         .chevron {
           transition: all 0.15s ease-in;
           flex-shrink: 0;
@@ -75,7 +82,7 @@
         max-width: 640px;
         p {
           margin-bottom: 10px;
-          span{
+          span {
             font-weight: 600;
           }
           &:last-child {

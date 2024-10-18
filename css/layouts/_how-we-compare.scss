@@ -1,12 +1,22 @@
 .how-we-compare {
   background-color: #f4f5fb;
-  padding-top: 72px;
+  padding-top: 80px;
   padding-bottom: 80px;
   text-align: center;
   min-height: 688px;
   h2 {
     color: #202122;
-    line-height: normal;
+    text-align: center;
+
+    /* Title/Heading H1 */
+    font-family: "Inter Tight";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: 0.48px;
+    max-width: 930px;
+    margin: auto;
     span {
       display: block;
     }
@@ -61,7 +71,7 @@
     border: 2px solid #fcc72c;
     background: #fff;
     margin: auto;
-    margin-top: 47px;
+    margin-top: 40px;
     a {
       color: #202122;
       font-family: $genralsans;
