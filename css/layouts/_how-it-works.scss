@@ -1,16 +1,25 @@
 .how-it-works {
   padding: 80px 0px;
+  padding-bottom: 43px;
   .wrapper {
     max-width: 1146px;
+  }
+  .slick-slide img {
+    display: block;
+    max-height: 562px;
+  }
+  .btnplace {
+    margin-top: 12px;
   }
   h2 {
     color: #202122;
     text-align: center;
-    font-family: $genralsans;
-    font-size: 60px;
+    font-family: "Inter Tight";
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: 0.48px;
   }
   .subtitle {
     color: #202122;

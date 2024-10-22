@@ -31,6 +31,10 @@
   .add-preview .boxes .box {
     width: calc(50% - 20px);
   }
+  .add-preview {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 600px) {
