@@ -3059,6 +3059,8 @@ footer .footer-text {
   min-height: 206.162px;
   width: calc(33.33% - 26.66px);
   background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3068,6 +3070,7 @@ footer .footer-text {
 @media (max-width: 991px) {
   .add-preview .boxes .box {
     width: calc(50% - 20px);
+    min-height: 140px;
   }
   .add-preview {
     padding-top: 60px;
