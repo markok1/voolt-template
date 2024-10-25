@@ -1097,7 +1097,8 @@ h2 {
   }
 }
 .start-ad {
-  padding: 80px 0px;
+  padding: 40px 0px;
+  padding-bottom: 88px;
   font-family: "Inter Tight", sans-serif;
 }
 .start-ad .wrapper {
@@ -1904,7 +1905,7 @@ h2 {
   }
 }
 .charged {
-  padding: 80px 0px;
+  padding: 75px 0px;
   background: var(--dark-blue-gradiente, linear-gradient(180deg, #041b2f 0%, #003360 100%));
 }
 .charged h2 {
@@ -2011,6 +2012,7 @@ h2 {
 .communicate-directly {
   padding: 232px 0px;
   position: relative;
+  padding-bottom: 188px;
 }
 
 .directly-content {
@@ -2203,7 +2205,7 @@ h2 {
 .how-we-compare {
   background-color: #f4f5fb;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 66px;
   text-align: center;
   min-height: 688px;
 }
@@ -2693,7 +2695,7 @@ h2 {
   }
 }
 footer {
-  padding-top: 38px;
+  padding-top: 88px;
   padding-bottom: 80px;
 }
 footer .wrapper {
@@ -2828,6 +2830,10 @@ footer .footer-text {
   line-height: 140%; /* 25.2px */
   letter-spacing: 0.18px;
   margin-top: 7px;
+}
+
+.pt-v1 {
+  padding-top: 20px;
 }
 
 @media (max-width: 772px) {
@@ -3043,7 +3049,7 @@ footer .footer-text {
 }
 .add-preview {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 26px;
 }
 .add-preview .boxes {
   display: flex;
