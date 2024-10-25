@@ -44,4 +44,17 @@
   .add-preview .boxes .box {
     width: 100%;
   }
+  .add-preview {
+    padding-top: 40px;
+  }
+  .add-preview .boxes {
+    gap: 15px;
+  }
+  .add-preview .boxes .box:nth-child(5),
+  .add-preview .boxes .box:nth-child(6) {
+    display: none;
+  }
+  .add-preview {
+    padding-bottom: 33px;
+  }
 }

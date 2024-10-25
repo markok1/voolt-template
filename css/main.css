@@ -2999,7 +2999,7 @@ footer .footer-text {
   }
   .campaign.campaign-v2,
   .campaign.campaign-v3 {
-    margin-top: 80px;
+    margin-top: 36px;
   }
 }
 @media (max-width: 772px) {
@@ -3021,19 +3021,29 @@ footer .footer-text {
   }
   .campaign .box .cont h3 {
     font-size: 16px;
-    letter-spacing: 0.14px;
+    letter-spacing: -0.2px;
+    line-height: 100%;
+  }
+  .campaign .box .img-place {
+    min-height: 70px;
+  }
+  .campaign .right {
+    padding-left: 18px;
+    margin-top: 5px;
+    padding-right: 18px;
   }
   .campaign .right h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .campaign .right p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 600px) {
   .campaign {
     flex-direction: column;
     gap: 25px;
+    margin-top: 16px;
   }
   .campaign .left,
   .campaign .right {
@@ -3086,6 +3096,19 @@ footer .footer-text {
 @media (max-width: 600px) {
   .add-preview .boxes .box {
     width: 100%;
+  }
+  .add-preview {
+    padding-top: 40px;
+  }
+  .add-preview .boxes {
+    gap: 15px;
+  }
+  .add-preview .boxes .box:nth-child(5),
+  .add-preview .boxes .box:nth-child(6) {
+    display: none;
+  }
+  .add-preview {
+    padding-bottom: 33px;
   }
 }
 .benefits {
