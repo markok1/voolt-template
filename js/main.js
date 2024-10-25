@@ -169,11 +169,46 @@ $(document).ready(function () {
 
   //Add UTMS to all links
   $("img, button, a").click(function (e) {
-    if (!$(this).hasClass("slick-arrow") && !$(this).hasClass("custom-dot-class") && !$(this).hasClass("arrow") && !$(this).hasClass("compare-tabs") && !$(this).hasClass("stop-redirect")) {
+    if (!$(this).hasClass("slick-arrow") && !$(this).hasClass("closeModal") && !$(this).hasClass("openModal") && !$(this).hasClass("custom-dot-class") && !$(this).hasClass("arrow") && !$(this).hasClass("compare-tabs") && !$(this).hasClass("stop-redirect")) {
       e.preventDefault();
       var e = new URL(window.location.href).search;
-      window.location.href = "https://app.voolt.com/flow/01/1/" + e;
+      window.location.href = "https://try.voolt.com/marketing2/1/" + e;
     }
   });
   //Add UTMS to all links
+
+  const modal = document.getElementById("videoModal");
+  const openButton = document.getElementById("openModal");
+  const closeButton = document.getElementById("closeModal");
+  const videoElement = document.getElementById("video1");
+  const videoSrc = "https://www.youtube.com/embed/s5fT-MSrrO0?si=pO6_5U81cv4TliuF";
+
+  openButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.classList.remove("opacity-0");
+    modal.classList.remove("invisible");
+    videoElement.src = videoSrc;
+    const currentSrc = videoElement.src;
+    const separator = currentSrc.indexOf("?") > -1 ? "&" : "?";
+    videoElement.src = currentSrc + separator + "autoplay=1";
+  });
+
+  closeButton.addEventListener("click", () => {
+    modal.classList.add("opacity-0");
+    modal.classList.add("invisible");
+    videoElement.src = "";
+  });
+
+  // Close modal when clicking outside of modal content
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("opacity-0");
+      modal.classList.add("invisible");
+      videoElement.src = "";
+    }
+    if (e.target === hero60secmodal) {
+      hero60secmodal.classList.add("opacity-0");
+      hero60secmodal.classList.add("invisible");
+    }
+  });
 });
